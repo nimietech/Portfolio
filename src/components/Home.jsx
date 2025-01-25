@@ -31,23 +31,23 @@ const Home = () => {
                     initial="hidden"
                     animate="visible"
                     variants={containerVariants}>
-          <motion.h1  className='text-2xl md:text-2xl lg:text-5xl my-7 md:my-10 pt-10 md:pt-7'
+          <motion.h1  className='text-2xl md:text-3xl lg:text-5xl my-7 md:my-10 pt-14'
                       variants={textVariants}>
             {HERO_SECTION.greeting}
           </motion.h1>
 
-          <motion.p className='text-xl md:text-2xl lg:text-3xl mb-4'
+          <motion.p className='text-xl md:text-3xl mb-4'
                     variants={textVariants}>
             {HERO_SECTION.introduction}
           </motion.p>
 
-          <motion.p className='text-xl md:text-2xl lg:text-3xl'
+          <motion.p className='text-xl md:text-3xl'
                     variants={textVariants}>
             {HERO_SECTION.description}
           </motion.p>
 
           <motion.a className='bg-stone-50 text-stone-900 p-2 lg:p-4 mt-8 rounded-2xl inline-block hover:bg-amber-950 hover:text-white'
-                    href="https://nimietech.github.io/Portfolio/MY%20CV.pdf"
+                    href="/MY CV.pdf"
                     download
                     rel='noopener noreferrer'
                     target='_blank'
@@ -60,7 +60,7 @@ const Home = () => {
                     initial='hidden'
                     animate='visible'
                     variants={imageVariants}>
-          <img src={glory} alt=""className='rounded-3xl'/>
+          <img src={glory} alt="" className='h-[200px] w-[600px] rounded-3xl'/>
         </motion.div>
 
       </div> 

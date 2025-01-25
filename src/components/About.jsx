@@ -25,14 +25,14 @@ const About = () => {
 
         <div className='h-1 w-20 mb-8 bg-white'></div>
 
-        <div className='md:w-[80%] mx-auto'>
+        <div className='md:w-[80%] mx-auto pt-14'>
             {ABOUT_CONTENT.paragraphs.map((paragraph, i) => (
                 <motion.p key={i}
                 initial= "hidden"
                 whileInView="visible"
                 viewport={{once: true, amount:0.5}}
                 variants={textVariants}
-                className='text-xl md:text-2xl lg:text-3xl mb-10 leading-relaxed'>
+                className='text-xl md:text-3xl mb-8 leading-relaxed'>
                     {paragraph}
                 </motion.p>
             ))}
