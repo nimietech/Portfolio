@@ -31,7 +31,7 @@ const Home = () => {
                     initial="hidden"
                     animate="visible"
                     variants={containerVariants}>
-          <motion.h1  className='text-2xl md:text-2xl lg:text-5xl my-7 md:my-10 pt-10 md:pt-0'
+          <motion.h1  className='text-2xl md:text-2xl lg:text-5xl my-7 md:my-10 pt-10 md:pt-7'
                       variants={textVariants}>
             {HERO_SECTION.greeting}
           </motion.h1>
@@ -47,9 +47,9 @@ const Home = () => {
           </motion.p>
 
           <motion.a className='bg-stone-50 text-stone-900 p-2 lg:p-4 mt-8 rounded-2xl inline-block hover:bg-amber-950 hover:text-white'
-                    href={HERO_SECTION.resumeLink}
+                    href="https://nimietech.github.io/Portfolio/MY%20CV.pdf"
                     download
-                    rel=' noopener noreferrer'
+                    rel='noopener noreferrer'
                     target='_blank'
                     variants={textVariants}>
             {HERO_SECTION.resumeLinkText}

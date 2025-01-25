@@ -13,7 +13,7 @@ const projectVariants = {
         rotate: 0,
         y:0, 
         transition: {
-            duration: .6,
+            duration: .5,
             ease: "easeOut",
             type: "spring",
             bounce: 0.4
