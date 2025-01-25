@@ -25,7 +25,7 @@ const About = () => {
 
         <div className='h-1 w-20 mb-8 bg-white'></div>
 
-        <div className='md:w-[80%] mx-auto pt-14'>
+        <div className='md:w-[80%] mx-auto pt-10'>
             {ABOUT_CONTENT.paragraphs.map((paragraph, i) => (
                 <motion.p key={i}
                 initial= "hidden"
