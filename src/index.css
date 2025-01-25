@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;    /* ensures the text remains the same regardless of the sizing*/
+    background-color: #000000;
+    color: #ffffff;
+    scroll-behavior: smooth; 
+}
+
+.bg-image{
+    
+}
+
+#work, #about, #skills, #contact{
+    scroll-margin-top: 50px;
+}
+
+
