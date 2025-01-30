@@ -47,7 +47,7 @@ const Home = () => {
           </motion.p>
 
           <motion.a className='bg-stone-50 text-stone-900 p-2 lg:p-4 mt-8 rounded-2xl inline-block hover:bg-amber-950 hover:text-white'
-                    href="/MY CV.pdf"
+                    href={HERO_SECTION.resumeLink}
                     download
                     rel='noopener noreferrer'
                     target='_blank'
@@ -60,7 +60,7 @@ const Home = () => {
                     initial='hidden'
                     animate='visible'
                     variants={imageVariants}>
-          <img src={glory} alt="" className='h-[200px] w-[600px] rounded-3xl'/>
+          <img src={glory} alt="" className='h-[180px] w-[450px] rounded-2xl'/>
         </motion.div>
 
       </div> 
