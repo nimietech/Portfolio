@@ -59,7 +59,7 @@ const Home = () => {
                     initial='hidden'
                     animate='visible'
                     variants={imageVariants}>
-          <img src={glory} alt="" className='h-[180px] w-[450px] rounded-2xl'/>
+          <img src={glory} alt="" className='md:h-[180px] w-[200px] md:w-[450px] rounded-2xl'/>
         </motion.div>
 
       </div> 
