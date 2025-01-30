@@ -45,7 +45,6 @@ const Home = () => {
                     variants={textVariants}>
             {HERO_SECTION.description}
           </motion.p>
-
           <motion.a className='bg-stone-50 text-stone-900 p-2 lg:p-4 mt-8 rounded-2xl inline-block hover:bg-amber-950 hover:text-white'
                     href={HERO_SECTION.resumeLink}
                     download

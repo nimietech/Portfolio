@@ -32,8 +32,8 @@ export const HERO_SECTION = {
   description:
     "I am continuously improving my skills in modern technologies while pursuing web development job opportunities.",
   resumeLinkText: "Get My Resume",
-  resumeLink: "/MY CV.pdf",
-};
+  resumeLink: `${process.env.PUBLIC_URL}/MY CV.pdf`,
+}; 
 
 //MY PROJECTS
 export const PROJECTS = [
