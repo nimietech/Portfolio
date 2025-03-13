@@ -28,11 +28,11 @@ export const LINKS = [
 export const HERO_SECTION = {
   greeting: "Hello there! 🖐️",
   introduction:
-    "My name is Glory Omoruyi, and I’m a Full Stack Web Developer passionate about building dynamic, user-friendly, and efficient web applications that deliver seamless digital experiences.",
+    "I'm Glory Omoruyi, a Full Stack Web Developer passionate about building dynamic, user-friendly, and efficient web applications that deliver seamless digital experiences.",
   description:
     "I am continuously improving my skills in modern technologies while pursuing web development job opportunities.",
   resumeLinkText: "Get My Resume",
-  resumeLink: `${process.env.PUBLIC_URL}/MY CV.pdf`,
+  resumeLink: `${process.env.PUBLIC_URL}/OMORUYI GLORY CV (1).pdf`,
 }; 
 
 //MY PROJECTS
@@ -79,7 +79,7 @@ export const PROJECTS = [
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I'm a full stack developer eager to apply my skills in both frontend and backend development to create dynamic, user-friendly web applications. I am passionate about crafting efficient, scalable solutions that provide intuitive user interfaces and robust functionality, ensuring a seamless experience for end-users",
+    "I love building cool websites and apps that not only look great but also feel like magic to use! Whether it’s frontend or backend, I enjoy crafting experiences that just click for users",
 
     "I am committed to writing clean and maintainable code and enjoy collaborating with cross-functional teams to deliver projects that align with business goals and user needs. I thrive in dynamic environments that push me to continuously learn and grow. I’m excited about the opportunity to contribute to a team, share my knowledge, and further develop my skills in web development.",
   ],
