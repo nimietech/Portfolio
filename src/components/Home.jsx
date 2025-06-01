@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { HERO_SECTION } from '../constants'
+import { HERO_SECTION, LINKS } from '../constants'
+import { Typewriter } from 'react-simple-typewriter';
 import glory from '../images/gloryprofile.png'
 
 // Animation for my homepage
@@ -25,27 +26,43 @@ const imageVariants = {
 const Home = () => {
   return (
     <section className="md:w-[80%] mx-auto">
-      <div className=' z-10 min-h-screen flex flex-col md:flex-row items-center gap-11 text-white w-full'>
+      <div className=' z-10 min-h-screen flex flex-col md:flex-row items-center text-white w-full'>
 
-        <motion.div className=' p-8'
+        <motion.div
                     initial="hidden"
                     animate="visible"
                     variants={containerVariants}>
-          <motion.h1  className='text-2xl md:text-3xl lg:text-5xl my-7 md:my-10 pt-14'
+          <motion.h1  className='text-2xl md:text-3xl lg:text-5xl my-7 md:my-10'
                       variants={textVariants}>
-            {HERO_SECTION.greeting}
+            {HERO_SECTION.bio}
           </motion.h1>
-
+{/* 
           <motion.p className='text-xl md:text-3xl mb-4'
                     variants={textVariants}>
             {HERO_SECTION.introduction}
-          </motion.p>
-
+          </motion.p> */}
+{
           <motion.p className='text-xl md:text-3xl'
                     variants={textVariants}>
-            {HERO_SECTION.description}
-          </motion.p>
-          <motion.a className='bg-stone-50 text-stone-900 p-2 lg:p-4 mt-8 rounded-2xl inline-block hover:bg-amber-950 hover:text-white'
+            
+            <Typewriter
+              words={[HERO_SECTION.description]}
+              loop={0}         // how many times to repeat, 0 = infinite
+              cursor          // show cursor
+              cursorStyle="" 
+              typeSpeed={70}   // speed of typing
+              deleteSpeed={50} // speed of deleting
+              delaySpeed={1000} // delay before typing next word
+            />
+          </motion.p> }
+
+          <motion.a className='bg-stone-50 text-stone-900 p-2 text-lg lg:p-4 mt-8 rounded-full inline-block hover:bg-amber-950 hover:text-white mr-4'
+                    href={HERO_SECTION.href}
+                    variants={textVariants}>
+            {HERO_SECTION.buttonLinkText}
+          </motion.a>
+
+          <motion.a className='bg-stone-50 text-stone-900 text-lg p-2 lg:p-4 mt-8 rounded-full inline-block hover:bg-amber-950 hover:text-white'
                     href={HERO_SECTION.resumeLink}
                     download
                     rel='noopener noreferrer'
@@ -54,13 +71,13 @@ const Home = () => {
             {HERO_SECTION.resumeLinkText}
           </motion.a>
         </motion.div>
-        
+{/*         
         <motion.div className=' p-8 '
                     initial='hidden'
                     animate='visible'
                     variants={imageVariants}>
           <img src={glory} alt="" className='md:h-[180px] w-[200px] md:w-[450px] rounded-2xl'/>
-        </motion.div>
+        </motion.div> */}
 
       </div> 
     </section>

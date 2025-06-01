@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import ElevatedPitch from './components/ElevatedPitch'
 
 const App = () => {
   return (
@@ -16,9 +17,10 @@ const App = () => {
         <Navbar />
         <Home/>
       </main>
-      <Projects/>
       <About/>
+      <Projects/>
       <Skills/>
+      <ElevatedPitch/>
       <Contact/>
 
 

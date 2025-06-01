@@ -1,11 +1,8 @@
 // STORE CONSTANTS VALUES USED THROUGHOUT MY REACT PROJECT (your data written in form of an API. Any changes that need to be done will be changed here only)
 
-import projects1 from "../images/projects1.webp";
-import projects2 from "../images/projects2.jpg";
-import projects3 from "../images/projects3.png";
-import projects4 from "../images/projects4.webp";
-import projects5 from "../images/projects5.jpg";
-import projects6 from "../images/projects6.jpg";
+import projects1 from "../images/projects1.jpg";
+import project2 from "../images/project2.jpg";
+import projects3 from "../images/project3.jpg";
 
 import html from '../images/skills-imgs/html.svg'
 import css from '../images/skills-imgs/css.svg'
@@ -18,70 +15,54 @@ import git from '../images/skills-imgs/git.svg'
 import github from '../images/skills-imgs/github.svg'
 
 export const LINKS = [
+  { href: "#about", label: "About me" },
   { href: "#project", label: "Projects" },
-  { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
 ];
 
 // TOP OF MY WEBSITE
 export const HERO_SECTION = {
-  greeting: "Hello there! 🖐️",
-  introduction:
-    "I'm Glory Omoruyi, a Full Stack Web Developer passionate about building dynamic, user-friendly, and efficient web applications that deliver seamless digital experiences.",
-  description:
-    "I am continuously improving my skills in modern technologies while pursuing web development job opportunities.",
-  resumeLinkText: "Get My Resume",
-  resumeLink: `${process.env.PUBLIC_URL}/OMORUYI GLORY CV (1).pdf`,
-}; 
+  bio:
+    "👋 Hi, I'm Glory Omoruyi,",
+  description: "A Front-end Developer, Web Developer and Coding Instructor",
+
+  buttonLinkText: "📩 Contact Me",
+  href:"#contact", label: "Contact",
+
+  resumeLinkText: "📄 Download CV",
+  resumeLink: `${process.env.PUBLIC_URL}/MY CV 1.pdf`,
+};
 
 //MY PROJECTS
 export const PROJECTS = [
   {
-    name: " Shakuro Website (CLONE)",
-    description: "A responsive website using REACTJS",
+    name: "Shakuro Services Platform",
+    description: "A responsive ReactJS website for showcasing and offering digital services like design and app development.",
     image: projects1,
     link: "https://github.com/nimietech/Shakuro-clone-.git",
   },
   {
-    name: "Login validation",
-    description: "A simple login system built using HTML, CSS, and JavaScript that validates a single username and password.",
-    image: projects2,
+    name: "Empire Cars Marketplace",
+    description: "A stylish car listing website focused on automotive trends and vehicles for sale.",
+    image: project2,
     link: "https://github.com/nimietech/login-validation.git",
   },
+
   {
-    name: "Netflix clone",
-    description: "An innovative Netflix clone using MongoDB for database management.",
+    name: "RAWBOT Tech",
+    description: "The official site for RAWBOT Tech, built to showcase our robotics and coding services.",
     image: projects3,
-    link: "https://github.com/nimietech/Netflix-clone.git",
+    link: "https://github.com/nimietech/RAWBOT"
   },
-  {
-    name: "A clock",
-    description:
-      "A simple clock created using html, css and javascript",
-    image: projects4,
-    link: "https://github.com/nimietech/Clock-project.git",
-  },
-  {
-    name: "A University website",
-    description: "A comprehensive website for a university, designed to provide an interactive platform for students",
-    image: projects5,
-    link: "https://github.com/nimietech/responsive-website.git",
-  },
-  {
-    name: "A search engine",
-    description: "An aesthetically pleasing and user-friendly image search engine.",
-    image: projects6,
-    link: "https://github.com/nimietech/Search-engine.git",
-  },
-  
+
 ];
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I love building cool websites and apps that not only look great but also feel like magic to use! Whether it’s frontend or backend, I enjoy crafting experiences that just click for users",
-
-    "I am committed to writing clean and maintainable code and enjoy collaborating with cross-functional teams to deliver projects that align with business goals and user needs. I thrive in dynamic environments that push me to continuously learn and grow. I’m excited about the opportunity to contribute to a team, share my knowledge, and further develop my skills in web development.",
+    "I'm Glory — a Frontend Developer and Coding Instructor dedicated to transforming ideas into powerful, user-focused digital experiences. With a solid foundation in HTML, CSS, and JavaScript, and hands-on experience with modern frameworks like React, Tailwind CSS and Next.js, I craft intuitive, high-performance interfaces that bridge creativity and functionality.",
+    "My development journey is backed by a growing understanding of backend technologies, including Node.js, Express, and MongoDB, enabling me to build solutions that are not only beautiful on the surface but also scalable and efficient behind the scenes. As a freelance developer, I collaborate with a diverse range of clients — from ambitious startups to forward-thinking organizations — helping them unlock their digital potential through thoughtful design and reliable code.",
+    "Beyond development, I serve as a coding instructor at RAWBOT, an initiative focused on introducing young learners to the world of robotics, programming, and automation. I lead engaging, hands-on training sessions that empower students with practical tech skills, opening doors to future opportunities in STEM. At the core of everything I do is a passion for creativity, education, and purpose-driven technology. Whether building a product or teaching the next generation of coders, my mission is to contribute to a more innovative and inclusive digital future."
   ],
 };
 
@@ -97,7 +78,6 @@ export const SKILLS = [
   { name: "GITHUB", image: github },
   { name: "MONGODB", image: mongoDB },
 
-  
 ]
 
 export const CONTACT_CONTENT = {

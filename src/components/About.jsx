@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ABOUT_CONTENT } from '../constants'
-
+import glory from '../images/gloryprofile.png';
 const textVariants = {
     hidden: {
         opacity: 0, y:50
@@ -20,23 +20,29 @@ const textVariants = {
 
 const About = () => {
   return (
-    <section className=' py-10 px-6' id='about'>
-        <h1 className='text-4xl md:text:6xl font-medium tracking-tight mb-8'>About</h1>
+    <section className='py-10 px-6' id='about'>
+        <h1 className='text-4xl md:text:6xl font-medium tracking-tight mb-8 text-center'>About me</h1>
 
-        <div className='h-1 w-20 mb-8 bg-white'></div>
+        <div className='h-1 w-20 mb-8 bg-white mx-auto'></div>
 
-        <div className='md:w-[80%] mx-auto pt-10'>
+        <div className='md:w-[100%] mx-auto pt-10 flex items-center flex-col gap-8'>
+            <motion.div className=''
+                    initial='hidden'
+                    animate='visible'
+                    >
+                    <img src={glory} alt="" className='md:h-[200px] w-[200px] md:w-[190px] rounded-full border-8 border-amber-950'/>
+            </motion.div> 
+
             {ABOUT_CONTENT.paragraphs.map((paragraph, i) => (
-                <motion.p key={i}
-                initial= "hidden"
-                whileInView="visible"
-                viewport={{once: true, amount:0.5}}
-                variants={textVariants}
-                className='text-xl md:text-3xl mb-8 leading-relaxed'>
+                <p className='text-lg leading-relaxed w-[60%]'>
                     {paragraph}
-                </motion.p>
+                </p>
             ))}
+
+            <a href="" className='bg-stone-50 text-stone-900 p-2 text-lg lg:p-4 mt-8 rounded-full inline-block hover:bg-amber-950 hover:text-white mr-4'>Let’s Work Together</a>
         </div>
+
+
     </section>
   )
 }
