@@ -29,7 +29,7 @@ const Projects = () => {
 
         <div className='h-1 w-20 mb-8 bg-white mx-auto'></div>
         
-        <div className='grid grid-cols-1 md:grid-cols-3 mx-auto w-[90%] gap-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto w-full sm:w-[95%] lg:w-[90%] gap-8'>
             {PROJECTS.map( (project, i) => (
                 <motion.div key={i} 
                 className='relative overflow-hidden group rounded-lg'
@@ -37,7 +37,7 @@ const Projects = () => {
                 whileInView="visible"
                 viewport={{once: true}}
                 variants={projectVariants}>
-                    <div className='relative w-[490px] h-[280px]'>
+                    <div className='relative w-full h-[220px] sm:h-[260px] md:h-[280px]'>
                     <img src={project.image} 
                          alt={project.name}
                          className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-lg'/>
@@ -51,56 +51,67 @@ const Projects = () => {
                     </div>
 
                     {/* Professional Info Box */}
-                <div className=' text-white p-4 mt-2 rounded-md shadow-md'>
+                <div className=' text-white p-4 mt-2 rounded-md shadow-md mb-10'>
                       <h3 className='text-lg font-bold mb-2'>My Role:</h3>
                       {i === 0 && (
                         <ul className='text-lg space-y-1 list-disc list-inside'>
-                          <li>Frontend Developer – Built responsive, accessible components using ReactJS, TailwindCSS</li>
+                          <li>Frontend Developer – Built responsive, accessible components using ReactJS, q              TailwindCSS</li>
                         </ul>
                       )}
                       {i === 1 && (
+                        <div>
                         <ul className='text-lg space-y-1 list-disc list-inside'>
                           <li>UI/UX Designer – Designed modern car display and browsing interface</li>
                           <li>Frontend Developer – Developed entire frontend using ReactJS and JavaScript</li>
                         </ul>
+                        <div className="mt-4 rounded-lg border border-gray-200 bg-gray-50 p-4 max-w-md">
+                          <p className="text-xs text-red-500 mt-2">
+                            * Demo account for testing purposes only
+                          </p>
+
+                          <div className="text-sm text-gray-600 space-y-1">
+                            <p>
+                              <span className="font-medium text-gray-800">Username:</span> glory
+                            </p>
+                            <p>
+                              <span className="font-medium text-gray-800">Password:</span> nimietech
+                            </p>
+                          </div>
+                        </div>
+                        </div>
                       )}
                       {i === 2 && (
                         <ul className='text-lg space-y-1 list-disc list-inside'>
                           <li>UI/UX Designer – Created modern tech-inspired design</li>
                           <li>Frontend Developer – Built using HTML, CSS, and JavaScript</li>
                         </ul>
-                      )}
-
-                      <h3 className='text-lg font-bold mt-4 mb-2'>Key Achievements:</h3>
-                      {i === 0 && (
+                      )}  
+                      {i === 3 && (
                         <ul className='text-lg space-y-1 list-disc list-inside'>
-                          <li>Reduced client onboarding time by 50% through intuitive navigation</li>
-                          <li>Implemented responsive layouts for seamless mobile experience</li>
-                          <li>Boosted visitor engagement through visually compelling UI</li>
+                           <li>UI/UX Designer – Designed a modern, tech-inspired user interface</li>
+                          <li>Implemented the full UI with modern frontend frameworks</li>
                         </ul>
-                      )}
-                      {i === 1 && (
+                      )}  
+                      {i === 4 && (
                         <ul className='text-lg space-y-1 list-disc list-inside'>
-                          <li>Streamlined car search and comparison with interactive UI</li>
-                          <li>Integrated car trend highlights to boost page views</li>
-                          <li>Enhanced user retention with fast-loading, optimized design</li>
+                           <li>UI/UX Designer – Designed a modern, tech-inspired user interface</li>
+                          <li>Implemented the full UI with modern frontend frameworks</li>
                         </ul>
-                      )}
-                      {i === 2 && (
-                        <ul className='text-lg space-y-1 list-disc list-inside'>
-                          <li>Launched online presence for RAWBOT tech company</li>
-                          <li>Increased inquiry rates through clear service presentation</li>
-                          <li>Custom-coded sections that reflect brand identity</li>
-                        </ul>
-                      )}
+                      )}  
                 </div>
-                </motion.div>
+                
+                <button className='flex flex-col justify-center mb-4'>
+                <a className="bg-stone-50 text-stone-900 px-6 py-3 text-base sm:text-lg rounded-full hover:bg-amber-950 hover:text-white transition"
+                href={project.url} target="_blank" rel="noopener noreferrer">View Project</a>
+                </button>
+              </motion.div> 
             ))}
         </div>
 
-        <div className=" mt-12 ml-20 py-6 text-white rounded-lg shadow-lg text-md md:text-base">
+        <div className="mt-12 mx-4 sm:mx-10 md:mx-20 py-6 text-white rounded-lg shadow-lg text-sm sm:text-md md:text-base">
+
         <p>
-            <strong>Disclosure:</strong> The visuals displayed here are real screenshots from client projects I've personally designed and developed. 
+            <strong>Disclosure:</strong> This visuals are screenshots of some of the projects I've personally developed from scratch. 
             To respect confidentiality agreements, some details have been generalized or selectively presented. 
             These examples highlight the scale, creativity, and problem-solving approach I bring to every collaboration.
         </p>

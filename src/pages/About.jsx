@@ -34,7 +34,8 @@ const About = () => {
             </motion.div> 
 
             {ABOUT_CONTENT.paragraphs.map((paragraph, i) => (
-                <p className='text-lg leading-relaxed w-[60%]'>
+                <p className='text-base sm:text-lg leading-relaxed w-full sm:w-[90%] md:w-[70%] lg:w-[60%] text-center'>
+
                     {paragraph}
                 </p>
             ))}

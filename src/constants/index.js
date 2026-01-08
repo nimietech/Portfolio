@@ -3,6 +3,8 @@
 import projects1 from "../images/projects1.jpg";
 import project2 from "../images/project2.jpg";
 import projects3 from "../images/project3.jpg";
+import projects33 from "../images/projects33.png";
+import projects34 from "../images/projects34.png";
 
 import html from '../images/skills-imgs/html.svg'
 import css from '../images/skills-imgs/css.svg'
@@ -13,6 +15,10 @@ import react from '../images/skills-imgs/React.svg'
 import mongoDB from '../images/skills-imgs/mongoDB.svg'
 import git from '../images/skills-imgs/git.svg'
 import github from '../images/skills-imgs/github.svg'
+import next from '../images/skills-imgs/next.svg'
+import typescript from '../images/skills-imgs/typescript.svg'
+import vsc from '../images/skills-imgs/vsc.svg'
+import postman from '../images/skills-imgs/postman.svg'
 
 export const LINKS = [
   { href: "#about", label: "About me" },
@@ -24,45 +30,62 @@ export const LINKS = [
 // TOP OF MY WEBSITE
 export const HERO_SECTION = {
   bio:
-    "👋 Hi, I'm Glory Omoruyi,",
-  description: "A Front-end Developer, Web Developer and Coding Instructor",
+    "👋 Hi, I'm Glory Omoruyi.",
+  description: "Founder of NimieTech, I build modern websites and digital solutions for businesses & startups.",
 
   buttonLinkText: "📩 Contact Me",
   href:"#contact", label: "Contact",
 
   resumeLinkText: "📄 Download CV",
-  resumeLink: `${process.env.PUBLIC_URL}/MY CV 1.pdf`,
+  resumeLink: `${process.env.PUBLIC_URL}/Glory_O CV.pdf`,
 };
 
 //MY PROJECTS
 export const PROJECTS = [
   {
-    name: "Shakuro Services Platform",
-    description: "A responsive ReactJS website for showcasing and offering digital services like design and app development.",
+    name: "Shakuro Digital Agency Platform",
+    // description: "A responsive React website for showcasing and offering digital services like design and app development.",
     image: projects1,
-    link: "https://github.com/nimietech/Shakuro-clone-.git",
+    url: "https://shakuro-clone.vercel.app/",
   },
   {
     name: "Empire Cars Marketplace",
-    description: "A stylish car listing website focused on automotive trends and vehicles for sale.",
+    // description: "A stylish car listing website focused on automotive trends and vehicles for sale.",
     image: project2,
-    link: "https://github.com/nimietech/login-validation.git",
+    url: "https://nimietech.github.io/Login-validation/",
   },
 
   {
-    name: "RAWBOT Tech",
-    description: "The official site for RAWBOT Tech, built to showcase our robotics and coding services.",
+    name: "RAWBOT Tech Platform",
+    // description: "The official site for RAWBOT Tech, built to showcase our robotics and coding services.(Still on-going)",
     image: projects3,
-    link: "https://github.com/nimietech/RAWBOT"
+    url: "https://nimietech.github.io/RAWBOT/"
+  },
+
+  {
+    name: "Movie app Home-page Clone",
+    // description: "A fully responsive movie app homepage inspired by Netflix, built to replicate modern streaming UI patterns and showcase clean layout, responsiveness, and user-friendly design.",
+    image: projects33,
+    url: "https://movie-web-app-home.onrender.com/"
+  },
+  {
+    name: "UI Design of an Ecommerce online store",
+    // description: "Modern e-commerce platform with product catalog, shopping cart integration, and responsive UI, built to showcase scalable front-end architecture. (still on-going)",
+    image: projects34,
+    url: "https://e-commerce-shopper-rosy.vercel.app/"
   },
 
 ];
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I'm Glory — a Frontend Developer and Coding Instructor dedicated to transforming ideas into powerful, user-focused digital experiences. With a solid foundation in HTML, CSS, and JavaScript, and hands-on experience with modern frameworks like React, Tailwind CSS and Next.js, I craft intuitive, high-performance interfaces that bridge creativity and functionality.",
-    "My development journey is backed by a growing understanding of backend technologies, including Node.js, Express, and MongoDB, enabling me to build solutions that are not only beautiful on the surface but also scalable and efficient behind the scenes. As a freelance developer, I collaborate with a diverse range of clients — from ambitious startups to forward-thinking organizations — helping them unlock their digital potential through thoughtful design and reliable code.",
-    "Beyond development, I serve as a coding instructor at RAWBOT, an initiative focused on introducing young learners to the world of robotics, programming, and automation. I lead engaging, hands-on training sessions that empower students with practical tech skills, opening doors to future opportunities in STEM. At the core of everything I do is a passion for creativity, education, and purpose-driven technology. Whether building a product or teaching the next generation of coders, my mission is to contribute to a more innovative and inclusive digital future."
+    "I’m a Frontend & Web Developer focused on transforming ideas into impactful, user-centered digital experiences. With a strong foundation in HTML, CSS, and JavaScript, and hands-on experience using React, Next.js, TypeScript, and Tailwind CSS, I build clean, high-performing interfaces that balance creativity with functionality.",
+
+    "I also have a growing understanding of backend technologies such as Node.js, Express, and MongoDB, allowing me to create solutions that are not only visually appealing but also scalable and efficient behind the scenes. As a remote / freelance developer, I work seamlessly across time zones and collaborate with founders, teams, and businesses worldwide.",
+
+    "From fast-moving startups to established organizations, I help bring ideas to life through clean UI, purposeful design, and reliable code. Whether it’s a one-off project, a long-term contract, or ongoing product support, I work as a technical partner, delivering solutions aligned with business goals, brand identity, and user experience.",
+
+    "Beyond development, I’m also a coding instructor, leading hands-on training sessions that equip students with practical, real-world tech skills. At the core of everything I do is a passion for creativity, education, and purpose-driven technology, whether I’m building products or helping the next generation step into tech."
   ],
 };
 
@@ -71,11 +94,15 @@ export const SKILLS = [
   { name: "HTML", image: html },
   { name: " CSS", image: css },
   { name: "JAVASCRIPT", image: javascript },
-  { name: "NODEJS", image: nodeJS },
+  { name: "TYPESCRIPT", image: typescript },
   { name: "REACT", image: react },
-  { name: "TAILWIND CSS", image: tailwind },
+  { name: "NEXT.JS", image: next },
+   { name: "TAILWIND CSS", image: tailwind },
+  { name: "NODEJS", image: nodeJS },
   { name: "GIT", image: git },
   { name: "GITHUB", image: github },
+  { name: "POSTMAN", image: postman },
+  { name: "VISUAL STUDIO CODE", image: vsc},
   { name: "MONGODB", image: mongoDB },
 
 ]
