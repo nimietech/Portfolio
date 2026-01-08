@@ -297,17 +297,16 @@ const Contact = () => {
               id="subject"
               name="subject"
               required
-              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 bg-whitedark:text-black"
+              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 text-black"
               defaultValue=""
             >
               <option value="" disabled>
                 Select a subject...
               </option>
               <option value="general-enquiry">General Enquiry</option>
-              <option value="web-development">Web Development</option>
-              <option value="business-collaboration">Business Collaboration / RAWBOT Initiatives</option>
+              <option value="web-development">Website / WebApp Development</option>
+              <option value="business-collaboration">Collaborations / Partnership</option>
               <option value="service-request">Tech Training / Workshops</option>
-              <option value="partnership-proposal">Partnership Proposal</option>
               <option value="other">Other</option>
             </select>
           </div>
